@@ -15,15 +15,15 @@ arch:
 init: false
 startup: "system"
 boot: "auto"
-uart: true
 map:
   - config:rw
   - ssl
+uart: true
 options:
   scanconfig: true
   foreground: true
 schema:
-  device: "device?"
+  device: "device(subsystem=tty)"
   port: "port?"
   latency: "int(0,10000)?"
   readonly: "bool?"
