@@ -1,5 +1,5 @@
 name: eBUSd
-version: "0.81"
+version: "0.82"
 slug: ebusd
 description: >
   This Add-on runs eBUSd, a daemon for handling communication with eBUS devices
@@ -20,7 +20,7 @@ options:
   scanconfig: true
   foreground: true
 schema:
-  device: "device?"
+  device: "str?"
   port: "port?"
   latency: "int(0,10000)?"
   readonly: "bool?"
