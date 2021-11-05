@@ -16,6 +16,9 @@ init: false
 startup: "system"
 boot: "auto"
 uart: true
+map:
+  - config:rw
+  - ssl
 options:
   scanconfig: true
   foreground: true
