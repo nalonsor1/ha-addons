@@ -35,6 +35,6 @@ schema:
   mqttport: "int?"
   mqttuser: "str?"
   mqttpass: "str?"
+  configpath: "str?"
   mqttjson: "bool?"
   mqttlog: "bool?"
-  configpath: "str?"
