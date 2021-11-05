@@ -9,7 +9,10 @@ RUN apk add --no-cache \
     git \
     mosquitto-dev \
     cmake
-    
+
+# copy data
+COPY rootfs /
+
 WORKDIR /build
 
 RUN git clone https://github.com/john30/ebusd.git /build && cmake . && make
@@ -27,7 +30,7 @@ COPY --from=builder /build/src/ebusd/ebusd /usr/local/bin/ebusd
 COPY --from=builder /build/src/tools/ebusctl /usr/local/bin/ebusctl
 
 WORKDIR /
-# COPY rootfs /
+
 COPY run.sh /
 RUN chmod a+x /run.sh
 CMD [ "/run.sh" ]
