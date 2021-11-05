@@ -27,7 +27,7 @@ COPY --from=builder /build/src/ebusd/ebusd /usr/local/bin/ebusd
 COPY --from=builder /build/src/tools/ebusctl /usr/local/bin/ebusctl
 
 WORKDIR /
-COPY rootfs /
+# COPY rootfs /
 COPY run.sh /
 RUN chmod a+x /run.sh
 CMD [ "/run.sh" ]
