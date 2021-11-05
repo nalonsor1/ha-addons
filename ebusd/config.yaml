@@ -23,7 +23,7 @@ options:
   scanconfig: true
   foreground: true
 schema:
-  device: "str?"
+  device: "device?"
   port: "port?"
   latency: "int(0,10000)?"
   readonly: "bool?"
