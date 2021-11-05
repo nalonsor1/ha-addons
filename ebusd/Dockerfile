@@ -11,7 +11,7 @@ RUN apk add --no-cache \
     cmake
 
 # copy data
-COPY rootfs /
+# COPY rootfs /
 
 WORKDIR /build
 
