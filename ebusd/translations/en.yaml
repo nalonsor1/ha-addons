@@ -35,6 +35,9 @@ configuration:
   mqttpass:
     name: MQTT Password
     description: Use PASSWORD when connecting to MQTT broker (no default)
+  configpath:
+    name: Config Path
+    description: local boiler files
   mqttjson:
     name: MQTT Json
     description: Publish in JSON format instead of strings
